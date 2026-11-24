@@ -1,0 +1,22 @@
+{
+  "name": "lantern-workbench",
+  "version": "0.1.0",
+  "private": true,
+  "description": "彩灯骨架扎制与透光预览系统",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:optics": "node --experimental-strip-types --loader ./scripts/ts_loader.mjs scripts/test_optics.ts",
+    "test:perf": "node --experimental-strip-types --loader ./scripts/ts_loader.mjs scripts/test_perf.ts"
+  },
+  "dependencies": {
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "@types/three": "0.169.0",
+    "typescript": "5.6.3",
+    "vite": "5.4.10"
+  }
+}

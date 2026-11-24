@@ -1,0 +1,16 @@
+@media print {
+  .topbar, .toolbar, .sidepanel, button { display: none !important; }
+  body { background: #fff; color: #000; }
+  .page, .container { padding: 0; max-width: none; }
+  .card {
+    border: 1px solid #999;
+    box-shadow: none;
+    break-inside: avoid;
+    background: #fff;
+    color: #000;
+  }
+  .badge { border: 1px solid #666; color: #000; background: #fff; }
+  table { font-size: 12px; }
+  h1, h2, h3 { color: #000; }
+  .muted, .dim { color: #444; }
+}
